@@ -1,35 +1,36 @@
-# 🐍 Proyecto 3: Python Katas & Programación Funcional | POO & Automatización
+# 🐍 Proyecto 3: 40 Katas de Python | Lógica, POO y Scripting
 
-Desarrollo y resolución algorítmica de **40 Katas en Python**, cubriendo desde fundamentos de lógica, estructuras de datos y funciones de orden superior (`map`, `filter`, `reduce`), hasta Programación Orientada a Objetos (POO), manejo robusto de excepciones y control de flujo.
-
----
-
-## 🎯 Cyber-Link & Justificación Técnica
-
-> *"La automatización y el scripting son el núcleo operativo de la administración de sistemas, el análisis forense y la respuesta ante incidentes."*
-
-En los entornos de ciberseguridad y gestión de infraestructuras de red, dominar Python nativo proporciona herramientas clave:
-
-* **Parseo y Sanitización de Datos:** El uso eficiente de estructuras nativas (diccionarios, conjuntos, tuplas) y funciones de orden superior permite procesar logs de eventos, volcados de memoria y listas de control de acceso (ACLs) de forma rápida e inmutable.
-* **Control de Excepciones y Resiliencia:** El diseño de bloques `try / except` con excepciones personalizadas previene caídas inesperadas en scripts de auditoría, escaneo y recolección de telemetría ante entradas malformadas o comportamientos anómalos.
-* **Modelado y Modularidad (POO):** La encapsulación mediante clases (`Arbol`, `UsuarioBanco`) sienta las bases para modelar topologías de red, gestionar estados de usuarios y estructurar herramientas de monitorización y pruebas de concepto (PoC).
-* **Ofuscación y Manipulación de Cadenas:** La manipulación a nivel de caracteres y enmascaramiento de datos sensibles replica lógicas básicas de anonimización de credenciales y análisis de patrones en payloads.
+Resolución práctica de 40 ejercicios (katas) en Python orientados a afianzar desde la lógica básica y el tratamiento de datos hasta la Programación Orientada a Objetos (POO) y el control de errores.
 
 ---
 
-## 🛠️ Arquitectura y Conceptos Aplicados
+### 🎯 Enfoque y Aplicación Práctica (Sistemas y Ciberseguridad)
 
-* **Tipos de Datos & Estructuras:** Diccionarios de frecuencias, conjuntos para unicidad, tuplas inmutables y manipulación avanzada de listas.
-* **Programación Funcional:** Funciones de orden superior (`map`, `filter`, `functools.reduce`) y funciones anónimas (`lambda`).
-* **Programación Orientada a Objetos (POO):** Encapsulación, métodos de instancia, gestión de estados internos y validación de transacciones.
-* **Gestión de Errores & Excepciones:** Manejo de `ValueError`, `ZeroDivisionError`, `IndexError` y definición de clases de excepción personalizadas (`Custom Exceptions`).
-* **Algoritmia y Recursión:** Cálculo factorial recursivo, detección de duplicados en tiempo lineal y verificación de anagramas.
-* **Control de Flujo:** Estructuras condicionales anidadas (`if / elif / else`) y funciones con argumentos variables (`*args`).
+Dominar Python sin depender de librerías externas es fundamental para la administración de servidores, la automatización de tareas y el análisis defensivo:
+
+* **Tratamiento y filtrado de datos:** Uso de diccionarios, conjuntos y funciones como `map`, `filter` y `reduce` para procesar listas, extraer información limpia y analizar registros o logs sin complicar el código.
+* **Control de errores (Try/Except):** Manejo de excepciones comunes y creación de errores propios para evitar que un script de monitorización o escaneo se caiga al recibir datos corruptos o valores inesperados.
+* **Programación Orientada a Objetos (POO):** Creación de clases (`Arbol`, `UsuarioBanco`) para entender cómo encapsular datos, gestionar estados y crear herramientas modulares y mantenibles.
+* **Manejo de cadenas y anonimización:** Manipulación de texto a bajo nivel, útil para tareas como enmascarar información sensible (tokens, contraseñas) o validar patrones.
 
 ---
 
-## 📁 Estructura del Repositorio
+### 🛠️ Conceptos Trabajados
+
+* **Estructuras de datos:** Diccionarios para recuento de frecuencias, tuplas, listas y conjuntos para eliminar duplicados.
+* **Programación funcional:** Uso de funciones anónimas (`lambda`) junto con `map()`, `filter()` y `reduce()`.
+* **POO básica:** Clases, métodos de instancia, atributos y validaciones internas.
+* **Gestión de fallos:** Captura de errores (`ValueError`, `ZeroDivisionError`) y control de entradas del usuario.
+* **Control de flujo y recursión:** Condiciones limpias con `if/elif/else`, funciones con argumentos variables (`*args`) y funciones recursivas (factorial).
+
+---
+
+### 📁 Estructura del Repositorio
 
 ```text
-├── katas.py         # Archivo principal con las 40 Katas resueltas, comentadas y testeadas
-└── README.md        # Documentación técnica y justificación del proyecto
+├── katas/
+│   ├── kata_01.py          # Conteo de frecuencia de letras
+│   ├── kata_02.py          # Duplicar valores con map()
+│   ├── ...
+│   └── kata_40.py          # Cálculo de compras con cupones
+└── README.md               # Explicación del proyecto y conceptos aplicados
